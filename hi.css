@@ -14,15 +14,32 @@ header h3 {
 
 nav a {
   color: Navy;
+  text-decoration: none;
+}
+
+a:hover {
+  color:white;
 }
 
 nav {
-background:rgba 0, 0, 0, .2;
+background:rgba(0, 0, 0, .2);
 grid-area:nav;
 }
 
+nav ul {
+  padding: 10px;
+  margin: 0;
+}
+
+nav li {
+  padding: 10px 10px;
+  list-style-type: none;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
 body {
- background: linear-gradient to right, lightgreen, teel;
+ background: linear-gradient(to right,lightgreen,teel);
  font-family: Verdana;
  margin: 0;
 }
