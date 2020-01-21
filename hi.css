@@ -1,17 +1,23 @@
 header {
-background-color:red;
+background:rgba 0, 0, 0, .2;
 grid-area:header;
 }
 
+header h1 {
+  background: mediumspringgreen;
+  text-shadow: 2px 2px 5px navy; 
+}
+
 nav {
-background-color:blue;
+background:rgba 0, 0, 0, .2;
 grid-area:nav;
 }
 
-
+body {
+ background: linear-gradient to right, lightgreen, teel;
 
 main {
-background-color:yellow;
+background:rgba 0, 0, 0, .2;
 grid-area:main;
 }
 
@@ -27,6 +33,6 @@ grid-template-areas:
 }
 
 footer {
-background-color:purple;
+background:rgba 0, 0, 0, .2;
 Grid-area:footer;
 }
