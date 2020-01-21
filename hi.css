@@ -30,6 +30,7 @@ body {
 main {
 background:rgba 0, 0, 0, .2;
 grid-area:main;
+margin: 5px;
 }
 
 main h2 {
@@ -39,7 +40,6 @@ main h2 {
 
 main p {
   color: white;
-  margin: 5px;
   }
 
   footer p {
