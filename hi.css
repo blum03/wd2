@@ -26,6 +26,7 @@ a:hover {
 nav {
 background:rgba(0, 0, 0, .2);
 grid-area:nav;
+width: auto;
 }
 
 nav ul {
