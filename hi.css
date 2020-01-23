@@ -7,11 +7,13 @@ header h1 {
   color: mediumspringgreen;
   text-shadow: 2px 2px 5px navy; 
   font-size: 5vw;
+  text-align: center;
 }
 
 header h3 {
  font-size: 2vw;
   color: Navy;
+  text-align: center;
 }
 
 nav a {
@@ -51,6 +53,7 @@ main {
 background:rgba(0,0,0,.2);
 grid-area:main;
 margin: 5px;
+width: 1fr;
 }
 
 main h2 {
@@ -66,6 +69,7 @@ main p {
   footer p {
     color:white;
     font-size: 1em;
+    text-align: center;
   }
   
 container1 {
