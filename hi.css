@@ -51,7 +51,6 @@ main {
 background:rgba(0,0,0,.2);
 grid-area:main;
 margin: 5px;
-width: 1fr;
 }
 
 main h2 {
