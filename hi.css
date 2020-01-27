@@ -71,7 +71,7 @@ main p {
     text-align: center;
   }
   
-container1 {
+.container1 {
 display:grid;
 grid-template-columns:auto 1fr;
 grid-gap:5em;
