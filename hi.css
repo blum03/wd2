@@ -1,3 +1,9 @@
+body {
+ background: linear-gradient(to right,lightgreen,teal);
+ font-family: Verdana;
+ margin: 0;
+}
+
 header {
 background:rgba(0,0,0,.2);
 grid-area:header;
@@ -43,11 +49,7 @@ nav li {
   font-weight: bold;
 }
 
-body {
- background: linear-gradient(to right,lightgreen,teal);
- font-family: Verdana;
- margin: 0;
-}
+
 
 main {
 background:rgba(0,0,0,.2);
@@ -70,7 +72,12 @@ main p {
     font-size: 1em;
     text-align: center;
   }
-  
+
+footer {
+background:rgba(0,0,0,.2);
+grid-area:footer;
+}
+
 .container1 {
 display:grid;
 grid-template-columns:auto 1fr;
@@ -80,9 +87,4 @@ grid-template-areas:
 "header header"
 "nav main"
 "footer footer";
-}
-
-footer {
-background:rgba(0,0,0,.2);
-Grid-area:footer;
 }
