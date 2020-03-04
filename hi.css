@@ -115,6 +115,7 @@ aside{
 	  color: navy;
 	  text-align:center;
 	}
+	
 	.top{
 	  grid-area:top;
 	}
@@ -126,6 +127,31 @@ aside{
 	  grid-area:bottom;
 	}
 	
+	figure{
+	  margin:0;
+	  text-align:center;
+	  background:rgba(0,0,0,.2);
+	}
+	
+	figcaption{
+	  padding:5px;
+	  color:navy;
+	  font-weight:bold;
+	}
+	
+	figure img{
+	  padding:10px;
+	}
+	.fig1 {
+	  grid-area:fig1;
+	}
+	.fig2{
+	  grid-area:fig2;
+	}
+	.section{
+	  grid-area:section;
+	}
+
 /*---------------------------Mobile Layout Styles----------------------------*/
 .container1 { /*for index.html*/
   display: grid;
@@ -153,10 +179,29 @@ aside{
     "bottom"
     "footer";
     }
+    .container3 { /*for special.html*/
+  display: grid;
+  grid-template-columns:100%;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "fig2"
+    "footer";
+    }
+    .nestedgrid{
+	  display:grid;
+	  grid-template-columns:100%;
+	  grid-template-areas:
+	  "section"
+	  "fig1";
+	  }
+	 
     
-/*This stuff is for the hamburger menu*/
 .toggleNav {
-    display:grid; /*This is what allows the hamburger icon and "Menu" to display*/
+    display:grid;
     text-align:center;
     font-size:1.5em;
     font-weight:bold;
@@ -204,7 +249,24 @@ aside{
     "footer footer";
     }
 
+.container3 { /*for special.html*/
+  display:grid;
+  grid-template-columns:auto 1fr;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "fig2 fig2"
+    "footer footer";
+    }
+    	.nestedgrid{
+	  display:grid;
+	  grid-template-columns:100%;
+	  grid-template-areas:
+	  "section"
+	  "fig1";
+}
 
+    
 /* Below will change from hamburger menu to side navigation*/
   
 .toggleNav {
@@ -220,7 +282,6 @@ aside{
     padding-left:10px;
     padding-top:10px;
   }
-
 	}
 
 /*-----------------------Desktop Media Query------------------------*/
@@ -241,5 +302,18 @@ aside{
     "nav main bottom"
     "footer footer footer";
     }
-
-	
+.container3 { /*for special.html*/
+  grid-template-columns:auto 1fr;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "fig2 fig2"
+    "footer footer";
+    }
+	 	.nestedgrid{
+	  display:grid;
+	  grid-template-columns:1fr auto;
+	  grid-template-areas:
+	  "section fig1";
+}
+}
