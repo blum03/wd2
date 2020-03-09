@@ -151,7 +151,25 @@ aside{
 	.section{
 	  grid-area:section;
 	}
+  .audio {
+    margin:0;
+    display: grid;  /*This needs to be set or it won't center*/
+    justify-content:space-around;
+}
+  .video {
+    margin:0;
+    display: grid;  /*This needs to be set or it won't center*/
+    justify-content:space-around;
+}
 
+  audio{
+    max-width:100%;
+  }
+
+video {
+  max-width:100%;
+  height:auto;
+}
 /*---------------------------Mobile Layout Styles----------------------------*/
 .container1 { /*for index.html*/
   display: grid;
@@ -198,7 +216,17 @@ aside{
 	  "section"
 	  "fig1";
 	  }
-	 
+	 .container4 { /*for index.html*/
+  display: grid;
+  grid-template-columns:100%;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+    }
     
 .toggleNav {
     display:grid;
@@ -265,7 +293,14 @@ aside{
 	  "section"
 	  "fig1";
 }
-
+.container4 { /*for destination.html*/
+  display:grid;
+  grid-template-columns:auto 1fr;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "footer footer";
+    }
     
 /* Below will change from hamburger menu to side navigation*/
   
@@ -317,3 +352,11 @@ aside{
 	  "section fig1";
 }
 }
+.container4 { /*for destination.html*/
+  display:grid;
+  grid-template-columns:auto 1fr;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "footer footer";
+    }
