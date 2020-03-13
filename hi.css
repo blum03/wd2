@@ -170,6 +170,43 @@ video {
   max-width:100%;
   height:auto;
 }
+
+form {
+    background-color:darkseagreen;
+    width:90%;
+    margin:auto;
+    color:white;
+    padding:10px;
+}
+
+input {
+  margin: 1px 0 10px 0;
+}
+
+.call {
+    color:navy;
+    text-align:center;
+    font-size:2em;
+    background-color:darkseagreen;
+    width:60%;
+    padding: 5px 0 0 0;
+    margin:10px auto 0 auto;
+    cursor:pointer;
+}
+
+.phone{
+    color:darkseagreen;
+    background-color:navy;
+    padding:5px;
+    text-align:center;
+    font-size:.75em;
+}
+ .button{
+  padding:5px;
+  background-color:navy;
+  color:lightseagreen;
+}
+
 /*---------------------------Mobile Layout Styles----------------------------*/
 .container1 { /*for index.html*/
   display: grid;
@@ -216,7 +253,7 @@ video {
 	  "section"
 	  "fig1";
 	  }
-	 .container4 { /*for index.html*/
+	 .container4 { /*for destination.html*/
   display: grid;
   grid-template-columns:100%;
   grid-gap:.5em;
@@ -227,7 +264,18 @@ video {
     "main"
     "footer";
     }
-    
+     .container5 { /*for contact.html*/
+  display: grid;
+  grid-template-columns:100%;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+    }
+      
 .toggleNav {
     display:grid;
     text-align:center;
@@ -301,6 +349,21 @@ video {
     "nav main"
     "footer footer";
     }
+    .container5 { /*for contact.html*/
+  display:grid;
+  grid-template-columns:auto 1fr;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "footer footer";
+    }
+    .nestedgrid2{
+	  display:grid;
+	  grid-template-columns:1fr auto;
+	  grid-template-areas:
+	  ".div1"
+	  ".div2";
+}
     
 /* Below will change from hamburger menu to side navigation*/
   
@@ -351,7 +414,7 @@ video {
 	  grid-template-areas:
 	  "section fig1";
 }
-}
+
 .container4 { /*for destination.html*/
   display:grid;
   grid-template-columns:auto 1fr;
@@ -360,3 +423,18 @@ video {
     "nav main"
     "footer footer";
     }
+    .container5 { /*for contact.html*/
+  display:grid;
+  grid-template-columns:auto 1fr;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "footer footer";
+    }
+    	.nestedgrid2{
+	  display:grid;
+	  grid-template-columns:1fr 1fr;
+	  grid-template-areas:
+	  ".call .phone";
+    	}
+    	}
